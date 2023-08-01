@@ -15,7 +15,7 @@ export default function Home() {
     <main className="flex flex-col items-center min-h-screen">
       <Navbar />
       {/* Contents */}
-      <div className="min-w-full bg-base-img">
+      <div className="max-w-full lg:min-w-full bg-base-img">
         <div className="flex flex-col items-center justify-center px-6 py-20 lg:px-80">
           <div className="bg-[url('/brush/white-brush.png')]">
             <h1 className="font-extrabold text-[4.2rem] lg:text-8xl sm:text-8xl font-gloria-haleluyah">
@@ -24,9 +24,9 @@ export default function Home() {
           </div>
           <div className="max-w-3xl py-10 text-xl text-center text-gray-400">
             <p className="leading-7 text-[#9b9b9b] sm:text-2xl">
-              Hey, I'm Minuettaro, experienced Web Developer and Data Scientist.
-              I create machine learning models and visuallize it through website
-              with appealing UI.
+              Hey, I&apos;m Minuettaro, experienced Web Developer and Data
+              Scientist. I create machine learning models and visuallize it
+              through website with appealing UI.
             </p>
           </div>
           <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-5 lg:min-w-[100px] sm:min-w-full md:space-y-0 md:space-x-5 md:min-w-fit py-2 min-w-full">
@@ -122,7 +122,7 @@ export default function Home() {
           <h2 className="text-4xl text-center font-gloria-haleluyah">
             Showcasing my creative journey
           </h2>
-          <h3 className="text-2xl text-gray-300">Projects owned by me</h3>
+          <h3 className="py-8 text-2xl text-gray-300">Projects owned by me</h3>
         </div>
       </div>
       <Footer />

@@ -15,8 +15,6 @@ export default function TechCard(props: {
   docsURL: String;
   baseColor: String;
 }) {
-  console.log(props);
-
   return (
     <Card
       className={`bg-black my-1  border-[#ffffff27] border-[2px] rounded-xl flex-[1_0_21%] flex-col justify-center items-center max-w-[105px] max-h-[140px] md:max-w-[120px] md:max-h-[140px]`}>
@@ -25,10 +23,11 @@ export default function TechCard(props: {
           href={`${props.docsURL}`}
           className="flex items-center justify-center min-w-full min-h-full">
           <Image
+            className="w-auto h-auto max-w-[80px] max-h-[80px]"
             src={`${props.imageURL}`}
             alt={`${props.children}`}
-            width={70}
-            height={70}
+            width={80}
+            height={80}
           />
         </Link>
       </CardContent>
