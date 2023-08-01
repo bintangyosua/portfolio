@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     backgroundImage: {
       "base-img": "url('/background.png')",
+      "noise-img": "url('/noise.png')",
     },
     fontFamily: {
       "gloria-haleluyah": [
@@ -18,6 +19,7 @@ module.exports = {
         "io-sans-serif",
         "system-ui",
       ],
+      helvetica: ["Helvetica"],
     },
     container: {
       center: true,

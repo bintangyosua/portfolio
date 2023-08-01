@@ -15,11 +15,15 @@ export default function TechCard(props: {
   docsURL: String;
   baseColor: String;
 }) {
+  console.log(props);
+
   return (
     <Card
-      className={`bg-black my-1  border-[#ffffff27] border-[2px] rounded-xl flex-[1_0_21%] flex-col justify-center items-center max-w-[120px] h-[140px]`}>
-      <CardContent className="py-5 h-[100px] flex items-center justify-center">
-        <Link href={`${props.docsURL}`} className="block h-fit w-fit ">
+      className={`bg-black my-1  border-[#ffffff27] border-[2px] rounded-xl flex-[1_0_21%] flex-col justify-center items-center max-w-[105px] max-h-[140px] md:max-w-[120px] md:max-h-[140px]`}>
+      <CardContent className="p-2 h-[100px] ">
+        <Link
+          href={`${props.docsURL}`}
+          className="flex items-center justify-center min-w-full min-h-full">
           <Image
             src={`${props.imageURL}`}
             alt={`${props.children}`}
@@ -28,7 +32,8 @@ export default function TechCard(props: {
           />
         </Link>
       </CardContent>
-      <CardFooter className="border-gray-600 bg-[#ffffff27] py-2 min-w-full rounded-b-xl">
+      <CardFooter
+        className={`border-[#ffffff27] bg-[#ffffff27] py-2 px-1 min-w-full rounded-b-xl`}>
         <div className="w-full text-center">
           <p className="w-full text-sm text-center">{props.children}</p>
         </div>

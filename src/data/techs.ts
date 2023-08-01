@@ -3,13 +3,13 @@ export const languages = [
     name: "Javascript",
     imageURL: "/languages/javascript.png",
     docsURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    baseColor: "#F0DB4E",
+    baseColor: "#f0db4e",
   },
   {
     name: "Python",
     imageURL: "/languages/python.png",
     docsURL: "https://www.python.org/",
-    baseColor: "#376FA1",
+    baseColor: "#376fa1",
   },
   {
     name: "Rust",
