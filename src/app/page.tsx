@@ -1,7 +1,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ProjectCard from "@/components/ProjectCard";
 import TechCard from "@/components/TechCard";
 import { Button } from "@/components/ui/button";
+import { projects } from "@/data/projects";
+import { GrContact } from "react-icons/gr";
 
 import {
   languages,
@@ -9,6 +12,8 @@ import {
   hostingPlatform,
   softwares,
 } from "@/data/techs";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,17 +35,21 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-5 lg:min-w-[100px] sm:min-w-full md:space-y-0 md:space-x-5 md:min-w-fit py-2 min-w-full">
-            <Button
-              size={"lg"}
-              className="min-w-full px-10 py-6 text-xl sm:min-w-full md:min-w-fit lg:min-w-fit">
-              My Projects
-            </Button>
-            <Button
-              variant={"outline"}
-              size={"lg"}
-              className="min-w-full px-10 py-6 text-xl border-white hover:bg-white hover:text-black sm:min-w-full md:min-w-fit lg:min-w-fit">
-              Contact Me
-            </Button>
+            <Link href="#projects">
+              <Button
+                size={"lg"}
+                className="min-w-full px-10 py-6 text-xl sm:min-w-full md:min-w-fit lg:min-w-fit">
+                My Projects
+              </Button>
+            </Link>
+            <a href="mailto:minuettaro@gmail.com">
+              <Button
+                variant={"outline"}
+                size={"lg"}
+                className="min-w-full px-10 py-6 text-xl border-white hover:bg-white hover:text-black sm:min-w-full md:min-w-fit lg:min-w-fit">
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -122,7 +131,20 @@ export default function Home() {
           <h2 className="text-4xl text-center font-gloria-haleluyah">
             Showcasing my creative journey
           </h2>
-          <h3 className="py-8 text-2xl text-gray-300">Projects owned by me</h3>
+          <h3 className="py-8 text-2xl text-gray-300" id="projects">
+            Projects owned by me
+          </h3>
+          <div className="flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row md:w-full">
+            {projects.map((item, i) => (
+              <ProjectCard
+                key={i}
+                imageURL={item.imageURL}
+                webURL={item.webURL}
+                name={item.name}
+                category={item.category}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

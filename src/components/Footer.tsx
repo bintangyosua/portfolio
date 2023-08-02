@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { BiDonateBlood } from "react-icons/bi";
 
 export default function Footer() {
   return (
@@ -8,7 +9,10 @@ export default function Footer() {
         <span>&copy;Minuettaro. Alright Reserved</span>
       </div>
       <div className="flex flex-col">
-        <Button>Donate Me</Button>
+        <Button className="w-fit">
+          <BiDonateBlood className="mr-2" />
+          Donate Me
+        </Button>
       </div>
     </div>
   );
