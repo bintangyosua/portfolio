@@ -18,9 +18,10 @@ export default function ProjectCard(props: {
   webURL: String;
   name: String;
   category: String;
+  enable: boolean;
 }) {
   return (
-    <Card className="bg-black my-1  border-[#ffffff27] border-[2px] rounded-xl flex flex-[1_0_21%] flex-col justify-between items-center md:min-w-[440px] md:max-w-min min-h-[300px] pt-4">
+    <Card className="bg-black my-1  border-[#ffffff27] border-[2px] rounded-xl flex flex-[1_0_21%] flex-col justify-between items-center pt-4 mx-auto">
       <CardContent className="flex items-center justify-center">
         <div className={``}>
           <Image
@@ -40,6 +41,7 @@ export default function ProjectCard(props: {
         <Link href={`${props.webURL}`}>
           <Button
             variant={"outline"}
+            disabled={props.enable}
             size={"sm"}
             className="px-5 py-3 text-[0.75rem] text-black bg-custblue-500 hover:bg-custblue-600 hover:text-black sm:min-w-fit md:min-w-fit lg:min-w-fit">
             <div className="flex flex-row items-center justify-between">

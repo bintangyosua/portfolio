@@ -93,7 +93,7 @@ export default function Home() {
           </CardsContainer>
         </div>
         <div>
-          <h3 className="text-2xl text-gray-300">Hosting Platforms</h3>
+          <h3 className="text-2xl text-gray-300">Platforms</h3>
           <CardsContainer>
             <>
               {hostingPlatform.map((item, i) => (
@@ -126,14 +126,16 @@ export default function Home() {
         </div>
       </div>
       <div className="min-w-full bg-noise-img">
-        <div className="flex flex-col items-center justify-center px-6 py-20 lg:px-80">
-          <h2 className="text-4xl text-center font-gloria-haleluyah">
+        <div className="flex flex-col items-center justify-center w-full px-6 py-20">
+          <h2
+            className="pb-8 text-4xl text-center font-gloria-haleluyah"
+            id="projects">
             Showcasing my creative journey
           </h2>
-          <h3 className="py-8 text-2xl text-gray-300" id="projects">
+          {/* <h3 className="py-8 text-2xl text-gray-300" id="projects">
             Projects owned by me
-          </h3>
-          <div className="flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row md:w-full">
+          </h3> */}
+          <div className="grid items-center justify-center grid-cols-1 gap-10 mx-auto md:grid-cols-2 lg:grid-cols-3">
             {projects.map((item, i) => (
               <ProjectCard
                 key={i}
@@ -141,6 +143,7 @@ export default function Home() {
                 webURL={item.webURL}
                 name={item.name}
                 category={item.category}
+                enable={item.enable}
               />
             ))}
           </div>

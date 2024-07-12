@@ -53,6 +53,18 @@ export const languages = [
     docsURL: "https://en.wikipedia.org/wiki/SQL",
     baseColor: "#ffffff",
   },
+  {
+    name: "HTML",
+    imageURL: "/languages/html.png",
+    docsURL: "https://en.wikipedia.org/wiki/HTML",
+    baseColor: "#ffffff",
+  },
+  {
+    name: "CSS",
+    imageURL: "/languages/css.png",
+    docsURL: "https://en.wikipedia.org/wiki/CSS",
+    baseColor: "#ffffff",
+  },
 ];
 
 export const libsFworks = [
@@ -176,26 +188,32 @@ export const libsFworks = [
 export const hostingPlatform = [
   {
     name: "Vercel",
-    imageURL: "/hostings/vercel-white.png",
+    imageURL: "/platforms/vercel-white.png",
     docsURL: "https://vercel.com/",
     baseColor: "#ffffff",
   },
   {
     name: "Github",
-    imageURL: "/hostings/github.png",
+    imageURL: "/platforms/github.png",
     docsURL: "https://github.com/",
     baseColor: "#ffffff",
   },
   {
     name: "Heroku",
-    imageURL: "/hostings/heroku.png",
+    imageURL: "/platforms/heroku.png",
     docsURL: "https://www.heroku.com/",
     baseColor: "#450199",
   },
   {
     name: "Replit",
-    imageURL: "/hostings/replit.png",
+    imageURL: "/platforms/replit.png",
     docsURL: "https://replit.com/",
+    baseColor: "#F26301",
+  },
+  {
+    name: "Ubuntu",
+    imageURL: "/platforms/ubuntu.png",
+    docsURL: "https://ubuntu.com/",
     baseColor: "#F26301",
   },
 ];
@@ -214,21 +232,15 @@ export const softwares = [
     baseColor: "#F27726",
   },
   {
-    name: "Brave",
-    imageURL: "/softwares/brave.png",
-    docsURL: "https://brave.com/",
-    baseColor: "#FF5501",
-  },
-  {
     name: "Git",
     imageURL: "/softwares/git.png",
     docsURL: "https://git-scm.com/",
     baseColor: "#EF5034",
   },
   {
-    name: "Github",
-    imageURL: "/hostings/github.png",
-    docsURL: "https://github.com/",
+    name: "Nginx",
+    imageURL: "/softwares/nginx.svg",
+    docsURL: "https://nginx.org/en",
     baseColor: "#ffffff",
   },
 ];
