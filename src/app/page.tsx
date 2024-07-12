@@ -14,6 +14,20 @@ import {
 } from "@/data/techs";
 import Image from "next/image";
 import Link from "next/link";
+import { FiInstagram, FiLinkedin, FiMail } from "react-icons/fi";
+import {
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoLinkedinSquare,
+  BiMailSend,
+} from "react-icons/bi";
+import {
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaMailBulk,
+  FaMailchimp,
+} from "react-icons/fa";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
@@ -27,11 +41,25 @@ export default function Home() {
               Bintang <span className="text-[#068FFF]">Yosua</span>
             </h1>
           </div>
-          <div className="max-w-3xl py-10 text-xl text-center text-gray-400">
+          <div className="flex flex-col max-w-3xl gap-5 py-10 text-xl text-center text-gray-400">
             <p className="leading-7 text-[#9b9b9b] sm:text-2xl">
               Hey, I&apos;m Bintang. I create machine learning models and
               visuallize it through website with appealing UI.
             </p>
+            <div className="flex items-center justify-center gap-3">
+              <a href="https://linkedin.com/in/bintangyosua">
+                <BiLogoLinkedinSquare size={34} />
+              </a>
+              <a href="https://instagram.com/itzbintangyosua">
+                <FiInstagram size={30} />
+              </a>
+              <a href="https://github.com/bintangyosua">
+                <FaGithubSquare fontSize={30} />
+              </a>
+              <a href="mailto:minuettaro@gmail.com">
+                <FiMail fontSize={30} />
+              </a>
+            </div>
           </div>
           <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center space-y-5 lg:space-y-0 lg:space-x-5 lg:min-w-[100px] sm:min-w-full md:space-y-0 md:space-x-5 md:min-w-fit py-2 min-w-full">
             <Link href="#projects">
