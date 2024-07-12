@@ -25,11 +25,11 @@ export default function ProjectCard(props: {
       <CardContent className="flex items-center justify-center">
         <div className={``}>
           <Image
+            className="object-cover"
             src={`${props.imageURL}`}
             alt=""
             height={197}
             width={389}
-            className="w-[389px] h-[197px]"
           />
         </div>
       </CardContent>
