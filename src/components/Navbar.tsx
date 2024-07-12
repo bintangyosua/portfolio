@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { PiShareNetworkBold } from "react-icons/pi";
+import { FiDownload } from "react-icons/fi";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,13 @@ export default function Navbar() {
       <div className="text-3xl font-extrabold">
         <Link href={"/"}>Home</Link>
       </div>
-      <div>
+      <div className="flex flex-row items-center gap-3">
+        <a href="/Resume_Panky_Bintang_Pradana_Yosua.pdf">
+          <Button>
+            <FiDownload className="mr-2" />
+            Resume
+          </Button>
+        </a>
         <a href="mailto:minuettaro@gmail.com">
           <Button>
             <PiShareNetworkBold className="mr-2" />
