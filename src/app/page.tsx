@@ -56,7 +56,7 @@ export default function Home() {
               <a href="https://github.com/bintangyosua">
                 <FaGithubSquare fontSize={30} />
               </a>
-              <a href="mailto:minuettaro@gmail.com">
+              <a href="mailto:itzbintangyosua@gmail.com">
                 <FiMail fontSize={30} />
               </a>
             </div>
@@ -69,7 +69,7 @@ export default function Home() {
                 My Projects
               </Button>
             </Link>
-            <a href="mailto:minuettaro@gmail.com">
+            <a href="mailto:itzbintangyosua@gmail.com">
               <Button
                 variant={"outline"}
                 size={"lg"}

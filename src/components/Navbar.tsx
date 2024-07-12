@@ -16,7 +16,7 @@ export default function Navbar() {
             Resume
           </Button>
         </a>
-        <a href="mailto:minuettaro@gmail.com">
+        <a href="mailto:itzbintangyosua@gmail.com">
           <Button>
             <PiShareNetworkBold className="mr-2" />
             Hire Me
