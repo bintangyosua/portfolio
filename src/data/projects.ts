@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Credit Risk Classification",
     imageURL: "/projects/credit_risk.png",
-    webURL: "https://github.com/bintangyosua/skyla-discord.js",
+    webURL: "https://github.com/discernix/data-mining",
     category: "Artificial Neural Network Machine Learning",
     enable: true,
   },
